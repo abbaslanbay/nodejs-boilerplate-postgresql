@@ -35,9 +35,7 @@ cp config.DEVELOPMENT.env.example config.DEVELOPMENT.env
 - [Error Handling](#error-handling)
 - [Validation](#validation)
 - [Authentication](#authentication)
-- [Authorization](#authorization)
 - [Logging](#logging)
-- [Custom Mongoose Plugins](#custom-mongoose-plugins)
 - [Linting](#linting)
 - [Contributing](#contributing)
 
