@@ -1,4 +1,11 @@
 {
   "userCreated": "User created successfully",
-  "userSignin": "User signin successfully"
+  "userSignin": "User signin successfully",
+  "emailExist": "Email already exist",
+  "password_not_match": "Password not match",
+  "something_went_wrong": "Something went wrong",
+  "email_already_exist": "Email already exists",
+  "user_not_found": "User not found",
+  "incorrect_password": "Incorrect password",
+  "userFound": "User found successfully"
 }

@@ -18,7 +18,10 @@ const signIn = {
   }),
 };
 
+const getUser = {};
+
 module.exports = {
   signUp,
   signIn,
+  getUser,
 };

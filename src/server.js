@@ -10,6 +10,7 @@ const xss = require('xss-clean');
 const compression = require('compression');
 const { errorConverter, errorHandler } = require('./middlewares/error');
 const i18n = require('./config/i18n.config');
+const db = require('./models');
 
 const v1Router = require('./routes/v1');
 
@@ -74,6 +75,10 @@ app.use((req, res, next) => {
     message: 'API endpoint doesnt exist',
     code: 404,
   });
+});
+
+db.sequelize.sync({ force: false }).then(() => {
+  console.log('Database connected');
 });
 
 // Start server

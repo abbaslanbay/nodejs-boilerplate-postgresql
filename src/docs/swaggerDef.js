@@ -16,7 +16,7 @@ const swaggerDef = {
   },
   servers: [
     {
-      url: `${process.env.DOMAIN}/v1`,
+      url: `${process.env.DOMAIN}/api/v1`,
     },
   ],
 };
