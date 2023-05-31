@@ -9,6 +9,8 @@ const cors = require('cors');
 const xss = require('xss-clean');
 const compression = require('compression');
 const { errorConverter, errorHandler } = require('./middlewares/error');
+const i18n = require('./config/i18n.config');
+
 const v1Router = require('./routes/v1');
 
 const app = express();
@@ -40,6 +42,9 @@ app.use(xss());
 // Compress all routes
 
 app.use(compression());
+
+// Internationalization
+app.use(i18n);
 
 // Serving static files
 app.use(express.static(path.join(__dirname, 'public')));
